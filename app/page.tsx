@@ -6,6 +6,7 @@ import About from "@/app/components/About";
 import Education from "@/app/components/Education";
 import Skills from "@/app/components/Skills";
 import Footer from "./components/Footer";
+import BackToTop from "./components/BackToTop";
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
             <Education />
             <Skills />
             <Footer />
+            <BackToTop />
         </div>
     );
 }
