@@ -11,7 +11,7 @@ import {
 
 export default function About() {
     return (
-        <section id="about" className="py-20 bg-gray-800/50">
+        <section id="about" className="py-20">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-4xl font-bold text-center mb-16 gradient-text">
                     About Me

@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 
 const sections = [
     "home",
@@ -42,12 +42,19 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800 top-0">
+        <nav className="w-full backdrop-blur-sm z-50 border-b border-gray-800 top-0">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-4">
-                    <div className="text-2xl font-bold gradient-text">
-                        William Bousada
-                    </div>
+                    <a
+                        href="/resume.pdf"
+                        download
+                        className="flex items-center gap-2 text-md px-4 py-2 border border-purple-500 text-purple-400 rounded-full hover:bg-purple-600 hover:text-white transition-all"
+                    >
+                        <Download size={16} />
+                        Resume
+                    </a>
+
+                    {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-8">
                         {sections.map((item) => (
                             <button
@@ -63,6 +70,8 @@ const Navbar = () => {
                             </button>
                         ))}
                     </div>
+
+                    {/* Mobile Menu Icon */}
                     <button
                         className="md:hidden"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -71,6 +80,7 @@ const Navbar = () => {
                     </button>
                 </div>
 
+                {/* Mobile Dropdown */}
                 {isMenuOpen && (
                     <div className="md:hidden py-4 border-t border-gray-800">
                         {sections.map((item) => (
