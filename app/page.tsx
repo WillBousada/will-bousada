@@ -7,6 +7,7 @@ import Education from "@/app/components/Education";
 import Skills from "@/app/components/Skills";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
+import Projects from "./components/Projects";
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
             <About />
             <Education />
             <Skills />
+            <Projects />
             <Footer />
             <BackToTop />
         </div>
