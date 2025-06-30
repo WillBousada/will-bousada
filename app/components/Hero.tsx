@@ -20,8 +20,8 @@ export default function Hero() {
                     Full Stack Developer
                 </p>
                 <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
-                    An ethusiatic programmer that is passionate about front-end
-                    web designs and is looking to further my technical skills.
+                    An ethusiatic programmer that is passionate about full stack
+                    web development and is looking to further my technical skills.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <button

@@ -42,7 +42,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800 fixed top-0">
+        <nav className="w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800 top-0">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-4">
                     <div className="text-2xl font-bold gradient-text">
