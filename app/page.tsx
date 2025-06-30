@@ -5,6 +5,7 @@ import Hero from "@/app/components/Hero";
 import About from "@/app/components/About";
 import Education from "@/app/components/Education";
 import Skills from "@/app/components/Skills";
+import Footer from "./components/Footer";
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
             <About />
             <Education />
             <Skills />
+            <Footer />
         </div>
     );
 }
