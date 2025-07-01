@@ -1,5 +1,6 @@
 "use client";
 import { Github, ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 export default function Projects() {
     const projects = [
@@ -44,7 +45,7 @@ export default function Projects() {
                             key={index}
                             className={`fade-in-delay-${index} flex flex-col bg-gray-800 rounded-xl overflow-hidden card-hover`}
                         >
-                            <img
+                            <Image
                                 src={project.image}
                                 alt={project.title}
                                 className="h-48 w-full object-cover"

@@ -12,10 +12,10 @@ export default function Contact() {
                     {/* Left side: paragraph */}
                     <div>
                         <h3 className="text-2xl font-bold mb-4">
-                            Let's work together
+                            Let&apos;s work together
                         </h3>
                         <p className="text-gray-400">
-                            I'm always interested in new opportunities and
+                            I&apos;m always interested in new opportunities and
                             exciting projects. Whether you have a question or
                             just want to say hi, feel free to reach out!
                         </p>

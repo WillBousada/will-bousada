@@ -24,23 +24,23 @@ export default function About() {
                                     My Journey
                                 </h3>
                                 <p className="text-gray-300 mb-6">
-                                    I'm a fourth-year Computer Science student
-                                    at Carleton University, specializing in
-                                    Software Engineering. Through my co-op
-                                    placements and side projects, I’ve gained
-                                    hands-on experience building full-stack
-                                    applications using technologies like Vue.js,
-                                    Laravel, React, and MongoDB.
+                                    I&apos;m a fourth-year Computer Science
+                                    student at Carleton University, specializing
+                                    in Software Engineering. Through my co-op
+                                    placements and side projects, I&apos;ve
+                                    gained hands-on experience building
+                                    full-stack applications using technologies
+                                    like Vue.js, Laravel, React, and MongoDB.
                                 </p>
                                 <p className="text-gray-300 mb-6">
-                                    Whether it's developing a CRM at Mortgage
-                                    Brokers Ottawa or building my own
+                                    Whether it&apos;s developing a CRM at
+                                    Mortgage Brokers Ottawa or building my own
                                     expense-tracking app <strong>Feeme</strong>,
                                     I love creating software that solves real
-                                    problems. Outside of tech, I’m passionate
-                                    about sports and value quality time with my
-                                    family and friends — they keep me grounded
-                                    and motivated.
+                                    problems. Outside of tech, I&apos;m
+                                    passionate about sports and value quality
+                                    time with my family and friends — they keep
+                                    me grounded and motivated.
                                 </p>
                                 <div className="flex space-x-4">
                                     <a
