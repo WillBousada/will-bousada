@@ -1,5 +1,6 @@
 "use client";
 import { ChevronDown } from "lucide-react";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
     const scrollToSection = (id: string) => {
@@ -18,9 +19,23 @@ export default function Hero() {
                     <span className="gradient-text">William Bousada</span>
                 </h1>
 
-                <p className="text-xl md:text-2xl text-gray-300 mb-8">
-                    🚀 Software Developer
+                <p className="text-xl md:text-2xl text-green-400 font-mono mb-8">
+                    <span className="text-white">&gt;</span>{" "}
+                    <Typewriter
+                        words={[
+                            "npm run start",
+                            "Welcome, explorer...",
+                            "🚀 Software Developer",
+                        ]}
+                        loop={false}
+                        cursor
+                        cursorStyle="_"
+                        typeSpeed={50}
+                        deleteSpeed={30}
+                        delaySpeed={2000}
+                    />
                 </p>
+
                 <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
                     An enthusiastic programmer passionate about full stack web
                     development and always looking for new opertunities to grow
