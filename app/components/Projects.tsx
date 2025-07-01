@@ -18,9 +18,9 @@ export default function Projects() {
                 "OnRender",
                 "Sendgrid",
             ],
-            link: "https://feeme.ca",
+            link: "https://feeme.ca/",
             code: "https://github.com/WillBousada",
-            image: "bg-gradient-to-br from-green-500 to-blue-500",
+            image: "/feemeImage.png",
         },
         {
             title: "Krew Home Inspectors",
@@ -28,7 +28,7 @@ export default function Projects() {
             tech: ["React", "Tailwind", "Vercel"],
             link: "https://www.krewhomeinspectors.ca/",
             code: "https://github.com/WillBousada",
-            image: "bg-gradient-to-br from-purple-500 to-pink-500",
+            image: "/krewImage.png",
         },
     ];
 

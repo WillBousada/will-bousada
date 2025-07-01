@@ -13,7 +13,7 @@ import FadeInSection from "./components/FadeIn";
 
 export default function Home() {
     return (
-        <div className="bg-gray-900 text-white min-h-screen">
+        <div className="relative bg-gray-900 text-white min-h-screen">
             <Navbar />
             <Hero />
             <FadeInSection>

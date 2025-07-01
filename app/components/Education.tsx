@@ -33,7 +33,7 @@ export default function Education() {
                             <div className="absolute w-4 h-4 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full left-6 md:left-auto md:right-0 md:transform md:translate-x-2 top-6"></div>
                             <div className="ml-16 md:ml-0 bg-gray-800 rounded-xl p-6 card-hover">
                                 <div className="flex items-start space-x-3 mb-4">
-                                    <GraduationCap className="w-6 h-6 text-purple-400 mt-1" />
+                                    <GraduationCap className="w-10 h-10 text-purple-400 mt-1" />
                                     <div>
                                         <h3 className="text-xl font-bold">
                                             {edu.degree}

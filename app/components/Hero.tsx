@@ -14,11 +14,12 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-blue-900/20"></div>
 
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-                <h1 className="text-5xl md:text-7xl font-bold mb-6">
+                <h1 className="text-4xl md:text-7xl font-bold mb-6">
                     <span className="gradient-text">William Bousada</span>
                 </h1>
+
                 <p className="text-xl md:text-2xl text-gray-300 mb-8">
-                    Software Developer
+                    🚀 Software Developer
                 </p>
                 <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
                     An enthusiastic programmer passionate about full stack web
@@ -44,7 +45,7 @@ export default function Hero() {
             {/* Chevron Down */}
             <button
                 onClick={() => scrollToSection("about")}
-                className="absolute bottom-20 left-1/2 transform -translate-x-1/2 animate-bounce z-10"
+                className="absolute bottom-20  transform -translate-x-1/2 animate-bounce z-10"
                 aria-label="Scroll to About section"
             >
                 <ChevronDown

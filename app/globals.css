@@ -19,20 +19,3 @@
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
-
-.skill-bar {
-    height: 4px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    border-radius: 2px;
-    transform-origin: left;
-    animation: fillBar 2s ease-out forwards;
-}
-
-@keyframes fillBar {
-    from {
-        transform: scaleX(0);
-    }
-    to {
-        transform: scaleX(1);
-    }
-}
