@@ -23,7 +23,7 @@ export default function Hero() {
                     <span className="text-white">&gt;</span>{" "}
                     <Typewriter
                         words={[
-                            "npm run start",
+                            "npm run dev",
                             "Welcome, explorer...",
                             "🚀 Software Developer",
                         ]}
