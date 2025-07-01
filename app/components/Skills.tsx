@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 
 const skillColors: Record<string, string> = {
     Render: "#000000",
@@ -37,9 +38,8 @@ const skillColors: Record<string, string> = {
 };
 
 function getTextColor(bgColor: string) {
-    // Simple luminance check to decide if text should be black or white
-    const c = bgColor.substring(1); // strip #
-    const rgb = parseInt(c, 16); // convert to integer
+    const c = bgColor.substring(1);
+    const rgb = parseInt(c, 16);
     const r = (rgb >> 16) & 0xff;
     const g = (rgb >> 8) & 0xff;
     const b = rgb & 0xff;
@@ -53,6 +53,8 @@ export default function Skills() {
         color,
     }));
 
+    const half = Math.ceil(skills.length / 2);
+
     return (
         <section id="skills" className="py-10">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,19 +62,26 @@ export default function Skills() {
                     Skills & Technologies
                 </h2>
                 <div className="flex flex-wrap justify-center gap-1">
-                    {skills.map((skill, index) => (
-                        <div
-                            key={index}
-                            className="px-2 py-1 rounded-md text-xs font-semibold cursor-default"
-                            style={{
-                                backgroundColor: skill.color,
-                                color: getTextColor(skill.color),
-                            }}
-                            title={skill.name}
-                        >
-                            {skill.name}
-                        </div>
-                    ))}
+                    {skills.map((skill, index) => {
+                        const isLeft = index < half;
+                        return (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, x: isLeft ? -50 : 50 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.6, ease: "easeOut" }}
+                                viewport={{ once: true }}
+                                className="px-2 py-1 rounded-md text-xs font-semibold cursor-default"
+                                style={{
+                                    backgroundColor: skill.color,
+                                    color: getTextColor(skill.color),
+                                }}
+                                title={skill.name}
+                            >
+                                {skill.name}
+                            </motion.div>
+                        );
+                    })}
                 </div>
             </div>
         </section>

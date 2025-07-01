@@ -10,10 +10,12 @@ import BackToTop from "./components/BackToTop";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import FadeInSection from "./components/FadeIn";
+import Starfield from "./components/Starfield";
 
 export default function Home() {
     return (
-        <div className="relative bg-gray-900 text-white min-h-screen">
+        <div id="home" className="relative bg-gray-900 text-white min-h-screen">
+            <Starfield />
             <Navbar />
             <Hero />
             <FadeInSection>
