@@ -18,6 +18,7 @@ export default function StarField() {
                 preset: "stars",
                 background: {
                     color: "transparent",
+                },
                 fullScreen: {
                     enable: true,
                     zIndex: 0,
